@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { NavbarLoginComponent } from './shared/navbar-login/navbar-login.component';
+import { PlayerModule } from './player/player.module';
 
 
 
@@ -14,11 +16,13 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    NavbarLoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

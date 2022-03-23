@@ -1,5 +1,7 @@
 .navbarStyle{
-    background-color: rgb(40, 28, 73);    
+    background-color: rgb(255, 255, 255);
+    
+    
 }
 
 .navbar-fixed-top {
@@ -12,11 +14,15 @@
     color: white;
     font-family: 'Bebas Neue', cursive;
     font-weight: 500;
+    font-family: 
+    
+
 }
 
 .textNavbar{
     font-size: 15px;
-    color: white;   
+    color: white;
+   
     font-family: 'Bebas Neue', cursive;  
 }
 
@@ -26,6 +32,7 @@
 
 .textNavbar1{
     font-size: 15px;
-    color: black;   
+    color: black;
+   
     font-family: 'Bebas Neue', cursive;  
 }
