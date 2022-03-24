@@ -1,5 +1,7 @@
 .navbarStyle{
-    background-color: rgb(40, 28, 73);    
+    background-color: rgb(40, 28, 73);  
+    height: 60px;  
+    width: 100%;
 }
 
 .navbar-fixed-top {
@@ -7,11 +9,10 @@
     border-width: 0 0 1px;
 }
 
-.tituloLogo{
-    font-size: 40px;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-    font-weight: 500;
+.logoFiore{
+    width: "90";
+    height: 55px;
+    filter: opacity(0.5) drop-shadow(0 0 0 rgb(247, 247, 247));  
 }
 
 .textNavbar{

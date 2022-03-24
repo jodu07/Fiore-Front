@@ -1,6 +1,7 @@
 .navbarStyle{
-    background-color: rgb(255, 255, 255);
-    
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    width: 100%;
     
 }
 
@@ -9,25 +10,30 @@
     border-width: 0 0 1px;
 }
 
-.tituloLogo{
-    font-size: 40px;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-    font-weight: 500;
-    font-family: 
+.logo{
+    font-size: 30px;
+    
+    color-adjust: white;
+    text-decoration-color: white;
+    
+   
     
 
 }
 
 .textNavbar{
     font-size: 15px;
-    color: white;
+    color: rgb(255, 255, 255);
    
     font-family: 'Bebas Neue', cursive;  
 }
 
 .container{
     background-color: black;
+}
+
+.logo{
+    filter: opacity(0.5) drop-shadow(0 0 0 white);
 }
 
 .textNavbar1{
