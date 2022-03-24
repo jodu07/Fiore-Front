@@ -12,14 +12,14 @@
       <th scope="col"><i class="fas fa-trash-alt"></i>Eliminar</th>            
     </tr>
   </thead>
-  <tbody>
+  <tbody *ngFor="let player of listPlayersHijo">
     <tr>
-      <th>1</th>            
-      <td>gdfdggf</td>
+      <th>{{player.idPlayer}} </th>            
+      <td>{{player.name}}</td>
       <td>ddffdf</td>
       <td>ggghfgh</td>
       <td>hgghhg</td>
-      <td>ghghfhg</td>          
+      <td>{{player.position}}</td>          
       <td>ggghhg</td>           
       <td>
         <button  type="button" class="btn btn-primary">Editar</button>  

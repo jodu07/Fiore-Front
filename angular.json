@@ -74,7 +74,8 @@
               "browserTarget": "fioreApp:build:production"
             },
             "development": {
-              "browserTarget": "fioreApp:build:development"
+              "browserTarget": "fioreApp:build:development",
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
@@ -83,6 +84,7 @@
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "fioreApp:build"
+            
           }
         },
         "test": {
