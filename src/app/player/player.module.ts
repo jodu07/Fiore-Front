@@ -12,6 +12,9 @@ import { PlayerTableComponent } from './components/player-table/player-table.com
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    PlayerPageComponent
   ]
 })
 export class PlayerModule { }
