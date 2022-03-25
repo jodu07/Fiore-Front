@@ -10,15 +10,8 @@
     border-width: 0 0 1px;
 }
 
-.logo{
-    font-size: 30px;
-    
-    color-adjust: white;
-    text-decoration-color: white;
-    
-   
-    
-
+.logo{        
+    filter: opacity(0.5) drop-shadow(0 0 0 white);
 }
 
 .textNavbar{
@@ -32,9 +25,6 @@
     background-color: black;
 }
 
-.logo{
-    filter: opacity(0.5) drop-shadow(0 0 0 white);
-}
 
 .textNavbar1{
     font-size: 15px;
