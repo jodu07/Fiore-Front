@@ -7,12 +7,7 @@ import { AppComponent } from './app.component';
 import { PlayerModule } from './player/player.module';
 import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './home/home.module';
-
-
-
-
-
-
+import { AdminModule } from './admin/admin.module';
 
 
 @NgModule({
@@ -25,7 +20,8 @@ import { HomeModule } from './home/home.module';
     HttpClientModule,
     PlayerModule,
     SharedModule,
-    HomeModule    
+    HomeModule,
+    AdminModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

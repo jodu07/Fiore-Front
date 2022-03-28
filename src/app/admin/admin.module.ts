@@ -13,8 +13,8 @@ import { TablePlayerComponent } from './table-player/table-player.component';
   ],
   imports: [
     CommonModule,
-    PlayerModule,
-    TablePlayerComponent
+    PlayerModule
+    
   ]
 })
 export class AdminModule { }
