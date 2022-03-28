@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PlayerPageComponent } from './player/pages/player-page/player-page.component';
 import { HomePageComponent } from './home/home-page/home-page.component';
 import { NewsPageComponent } from './news/pages/news-page/news-page.component';
+import { PanelAdminComponent } from './admin/panel-admin/panel-admin.component';
 
 
 const routes: Routes = [
@@ -10,6 +11,7 @@ const routes: Routes = [
   {path:'playerPage' , component: PlayerPageComponent},
   {path:'home' , component: HomePageComponent},  
   {path:'news' , component: NewsPageComponent},
+  {path:'admin' , component: PanelAdminComponent },
   {path:'' , component: HomePageComponent, pathMatch:'full'}, 
   {path: '**', redirectTo: ''}
 
