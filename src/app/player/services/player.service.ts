@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class PlayerService {
 
-  url='/api';
+  apiUrl='/api';
 
   constructor(private http: HttpClient) { }
 
@@ -17,6 +17,18 @@ export class PlayerService {
   getJugadores():Observable<Player>{
   return this.http.get<Player>('/api');
 }
+
+
+ searchNamePlayer(termino: string): Observable<Player>{
+  
+  return this.http.get<Player>(`/api/${termino}`);
+   
+ }
+
+
+
+
+
 
 
 }

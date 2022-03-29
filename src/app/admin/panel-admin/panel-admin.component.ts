@@ -11,6 +11,10 @@ import { Player } from '../../player/interfaces/player.interface';
 })
 export class PanelAdminComponent implements OnInit {
 
+  placeholder: string = 'Buscar por Nombre...';
+
+  termino: string = '';
+
 
   listPlayers: Player[] = [];
 
@@ -32,5 +36,31 @@ export class PanelAdminComponent implements OnInit {
   ngOnInit(): void {
     this.listarJugadores();
   }
+
+  buscar( terminoInput: string){
+    //console.log(this.termino);
+
+    this.termino = terminoInput;
+
+
+    this._playerService.searchNamePlayer(this.termino)
+    .subscribe( (players) => {
+      this.listPlayers = <any>players;
+
+    }, (err) => {
+      this.listPlayers = [];
+    }
+    )
+
+   
+  }
+
+
+  sugerencias( termino: string){
+
+
+
+  }
+
 
 }
