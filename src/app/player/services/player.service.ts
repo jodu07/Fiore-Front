@@ -19,16 +19,9 @@ export class PlayerService {
 }
 
 
- searchNamePlayer(termino: string): Observable<Player>{
-  
-  return this.http.get<Player>(`/api/${termino}`);
-   
+ searchNamePlayer(termino: string): Observable<Player>{  
+  return this.http.get<Player>(`${this.url}/api/${termino}`);   
  }
-
-
-
-
-
 
 
 }
