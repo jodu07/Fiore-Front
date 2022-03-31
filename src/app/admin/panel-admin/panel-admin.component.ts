@@ -22,7 +22,7 @@ export class PanelAdminComponent implements OnInit {
 
 
   listarJugadores(){
-    this._playerService.getJugadores()
+    this._playerService.getPlayers()
     .subscribe( res => {
       console.log(res);
       this.listPlayers=<any>res;

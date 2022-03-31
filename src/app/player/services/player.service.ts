@@ -8,14 +8,14 @@ import { Observable } from 'rxjs';
 })
 export class PlayerService {
 
-  apiUrl='/api';
+  private url='http://localhost:3000';
 
   constructor(private http: HttpClient) { }
 
 
   //get jugadores
-  getJugadores():Observable<Player>{
-  return this.http.get<Player>('/api');
+  getPlayers():Observable<Player>{
+  return this.http.get<Player>(`${this.url}/api/`);
 }
 
 

@@ -4,6 +4,8 @@ import { PlayerPageComponent } from './player/pages/player-page/player-page.comp
 import { HomePageComponent } from './home/home-page/home-page.component';
 import { NewsPageComponent } from './news/pages/news-page/news-page.component';
 import { PanelAdminComponent } from './admin/panel-admin/panel-admin.component';
+import { LoginComponent } from './signIn/login/login.component';
+import { RegisterComponent } from './signIn/register/register.component';
 
 
 const routes: Routes = [
@@ -12,6 +14,8 @@ const routes: Routes = [
   {path:'home' , component: HomePageComponent},  
   {path:'news' , component: NewsPageComponent},
   {path:'admin' , component: PanelAdminComponent },
+  {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent},
   {path:'' , component: HomePageComponent, pathMatch:'full'}, 
   {path: '**', redirectTo: ''}
 
