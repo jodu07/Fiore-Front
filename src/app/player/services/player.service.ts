@@ -22,6 +22,13 @@ export class PlayerService {
  searchNamePlayer(termino: string): Observable<Player>{  
   return this.http.get<Player>(`${this.url}/api/${termino}`);   
  }
+ 
+
+ searchForPosition(termino: string): Observable<Player>{    
+
+  return this.http.get<Player>(`${this.url}/api/${termino}`); 
+   
+}
 
 
 }

@@ -1,32 +1,48 @@
-
-
-
-
-
-
 <div class="d-flex">
+  <app-sidebar-busquedas></app-sidebar-busquedas>
 
+  <div class="container">
+    <div class="animate__animated animate__fadeIn animate__faster">
+      <h2>
+        Por Region <small> {{ positionActiva | titlecase }} </small>
+      </h2>
+      <hr />
 
-    <app-sidebar-busquedas></app-sidebar-busquedas>
+      <h5>Seleccione la posición</h5>
 
-    <div class="container">
+      <div class="row">
+        <div class="col">
+          <!--  primera forma [class.btn-warning]="region === regionActiva" -->
+          <!-- segunda forma [ngClass]="{
+            'btn-warning': region === regionActiva,
+            'btn-outline-primary': region !== regionActiva
+        }" -->
 
-        <div class="row">
-            <div class="col">
-              <app-input-busqueda
-                (onEnter)="buscar($event)"
-                (onDebounce)="sugerencias($event)"
-                [placeholder]="placeholder"
-              >
-              </app-input-busqueda>
-            </div>
-          </div>
+          <button
+            *ngFor="let position of positions"
+            [class]="getClaseCss(position)"
+            (click)="activarPosition(position)"
+          >
+            {{ position | titlecase }}
+          </button>
+        </div>
+      </div>
 
-        <app-table-player class="container" [listPlayersHijo]="listPlayers"></app-table-player>
-    
+      <div class="row">
+        <div class="col">
+          <app-input-busqueda
+            (onEnter)="buscar($event)"
+            (onDebounce)="sugerencias($event)"
+            [placeholder]="placeholder"
+          >
+          </app-input-busqueda>
+        </div>
+      </div>
     </div>
 
+    <app-table-player
+      class="container"
+      [listPlayersHijo]="listPlayers"
+    ></app-table-player>
+  </div>
 </div>
-
-
-
