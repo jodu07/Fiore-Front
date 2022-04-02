@@ -4,6 +4,8 @@ import { PlayerPageComponent } from './pages/player-page/player-page.component';
 import { PlayerTableComponent } from './components/player-table/player-table.component';
 import { PlayerCardComponent } from './components/player-card/player-card.component';
 import { ForPlayerComponent } from './pages/for-player/for-player.component';
+import { RouterModule } from '@angular/router';
+
 
 
 
@@ -15,7 +17,8 @@ import { ForPlayerComponent } from './pages/for-player/for-player.component';
     ForPlayerComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports:[
     PlayerPageComponent,

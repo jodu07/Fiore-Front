@@ -31,6 +31,19 @@ export class PlayerService {
 }
 
 
+
+getPlayerForId( id_player: string ): Observable<Player>{
+
+  
+  return this.http.get<Player>(`${this.url}/api/${id_player}`); 
+
+}
+
+
+
+
+
+
 }
 
 

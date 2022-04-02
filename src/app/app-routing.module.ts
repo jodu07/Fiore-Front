@@ -17,7 +17,7 @@ const routes: Routes = [
   {path:'admin' , component: PanelAdminComponent },
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
-  {path: 'forPlayer', component: ForPlayerComponent},
+  {path: 'forPlayer/:idPlayer', component: ForPlayerComponent},
   {path:'' , component: HomePageComponent, pathMatch:'full'}, 
   {path: '**', redirectTo: ''}
 
