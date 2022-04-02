@@ -1,0 +1,19 @@
+<div class="container">
+
+    <h2 class="font-weight-bold mb-2">Porteros</h2>
+  <hr/>
+
+  <div class="row pb-5 mb-4">
+    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" *ngFor="let player of listPlayersHijo">
+      <!-- Card-->
+      <div class="card rounded shadow-sm border-0" >
+        <div class="card-body p-4" >
+            <img src={{player.image}} alt="" class="img-fluid d-block mx-auto mb-1">          
+         <h1>{{player.dorsal}} </h1>
+         <h5> <a href="#" class="text-dark">Ver jugador</a></h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
