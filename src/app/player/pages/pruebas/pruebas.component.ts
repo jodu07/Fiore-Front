@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { PlayerService } from '../../services/player.service';
 import { ActivatedRoute } from '@angular/router';
-import { switchMap, tap } from 'rxjs/operators'; 
+import { switchMap, tap } from 'rxjs/operators';
 import { Player } from '../../interfaces/player.interface';
+import { PlayerService } from '../../services/player.service';
 
 @Component({
-  selector: 'app-for-player',
-  templateUrl: './for-player.component.html',
-  styleUrls: ['./for-player.component.css']
+  selector: 'app-pruebas',
+  templateUrl: './pruebas.component.html',
+  styleUrls: ['./pruebas.component.css']
 })
-export class ForPlayerComponent implements OnInit { 
+export class PruebasComponent implements OnInit {
 
   player!: Player;
 
@@ -63,3 +63,4 @@ const idPlayer = <number>this.activatedRoute.snapshot.params['idPlayer'];
   
   
 }
+

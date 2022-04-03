@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { PlayerService } from '../../services/player.service';
 import { Player } from '../../interfaces/player.interface';
 
@@ -12,7 +12,10 @@ export class PlayerPageComponent implements OnInit {
 
   listPlayers: Player[] = [];
 
-  constructor( private _playerService: PlayerService, private router: Router) { }
+
+
+  constructor( private _playerService: PlayerService, private router: Router,
+                private activatedRoute: ActivatedRoute) { }
 
 
   listarJugadores(){
@@ -28,7 +31,8 @@ export class PlayerPageComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.listarJugadores();
-  }
+    this.listarJugadores();   
+}
+  
 
 }

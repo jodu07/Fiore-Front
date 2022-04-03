@@ -15,11 +15,17 @@ export class PlayerService {
 
   //get jugadores
   getPlayers():Observable<Player>{
-  return this.http.get<Player>(`${this.url}/api/`);
+
+  const url = `${this.url}/api/`;
+
+  
+  return this.http.get<Player>(url);
 }
 
 
  searchNamePlayer(termino: string): Observable<Player>{  
+
+
   return this.http.get<Player>(`${this.url}/api/${termino}`);   
  }
  
@@ -32,10 +38,18 @@ export class PlayerService {
 
 
 
-getPlayerForId( id_player: string ): Observable<Player>{
+getPlayerForId( id_player: number ): Observable<Player>{
+
+  const url = `${this.url}/api/${id_player}`;
+
+  console.log(url);
 
   
-  return this.http.get<Player>(`${this.url}/api/${id_player}`); 
+  return this.http.get<Player>(url); 
+
+  
+
+
 
 }
 
