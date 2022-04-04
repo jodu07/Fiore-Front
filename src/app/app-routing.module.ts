@@ -8,6 +8,7 @@ import { LoginComponent } from './signIn/login/login.component';
 import { RegisterComponent } from './signIn/register/register.component';
 import { ForPlayerComponent } from './player/pages/for-player/for-player.component';
 import { PruebasComponent } from './player/pages/pruebas/pruebas.component';
+import { RegisterPlayerComponent } from './player/pages/register-player/register-player.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path:'admin' , component: PanelAdminComponent },
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
+  {path: 'registerPlayer', component: RegisterPlayerComponent},
   {path: 'forPlayer/:idPlayer', component: ForPlayerComponent},
   {path: 'prueba/:idPlayer', component: PruebasComponent},
   {path:'' , component: HomePageComponent, pathMatch:'full'}, 

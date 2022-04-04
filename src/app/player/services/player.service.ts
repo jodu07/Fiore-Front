@@ -8,53 +8,36 @@ import { Observable } from 'rxjs';
 })
 export class PlayerService {
 
-  private url='http://localhost:3000';
+  private api='http://localhost:3000';
 
   constructor(private http: HttpClient) { }
 
 
   //get jugadores
   getPlayers():Observable<Player>{
-
-  const url = `${this.url}/api/`;
-
-  
+  const url = `${this.api}/api/`;  
   return this.http.get<Player>(url);
 }
 
-
  searchNamePlayer(termino: string): Observable<Player>{  
+  return this.http.get<Player>(`${this.api}/api/${termino}`);   
+ } 
 
-
-  return this.http.get<Player>(`${this.url}/api/${termino}`);   
- }
- 
-
- searchForPosition(termino: string): Observable<Player>{    
-
-  return this.http.get<Player>(`${this.url}/api/${termino}`); 
-   
+ searchForPosition(termino: string): Observable<Player>{  
+  return this.http.get<Player>(`${this.api}/api/${termino}`);    
 }
-
-
 
 getPlayerForId( id_player: number ): Observable<Player>{
-
-  const url = `${this.url}/api/${id_player}`;
-
-  console.log(url);
-
-  
+  const url = `${this.api}/api/${id_player}`;
+  console.log(url);  
   return this.http.get<Player>(url); 
-
-  
-
-
-
 }
 
-
-
+addPlayer( player: Player): Observable<Player>{ 
+ // console.log(player);
+ const url = `${this.api}/api/`;  
+ return this.http.post<Player>(url, player);
+}
 
 
 
