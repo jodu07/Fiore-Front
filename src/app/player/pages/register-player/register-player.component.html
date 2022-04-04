@@ -20,19 +20,18 @@
                     <label class="form-label">Dorsal</label>
                     <input [(ngModel)]="player.dorsal" type="number" class="form-control" name="dorsal">
                 </div>
+
                 <div class="mb-3">
-                    <label class="form-label">Posicion</label>
-                    <input [(ngModel)]="player.position" type="number" class="form-control" name="position">
-                </div>                               
-                
+                    <label class="form-label">Position</label>
+                    <select  [(ngModel)]="player.position" type="number" name="position" class="form-select" aria-label="Default select example">                  
+                        <option value="1">arquero</option>
+                        <option value="2">defensa</option>
+                        <option value="3">medicampista</option>
+                        <option value="4">delantero</option>
+                      </select>
+                </div>                
                 <button (click)="registerPlayer()" class="btn btn-primary">Agregar</button>
             </form>
         </div>
-
-        
-
-        
-
-    </div>
-    
+    </div>    
 </div>
