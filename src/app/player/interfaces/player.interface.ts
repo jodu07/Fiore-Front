@@ -3,7 +3,8 @@
 export interface Player {
     idPlayer: number;
     name: string;
-    position: string;
+    last: string
+    position: string | number;
     image: string;
     dorsal: number;
 
