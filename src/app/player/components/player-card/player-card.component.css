@@ -1,0 +1,13 @@
+
+
+.cardStyle{
+    background-color: rgb(40, 28, 73);
+    color: white;
+}
+
+.borderRadius{
+    border-top-left-radius: 100px 100px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
