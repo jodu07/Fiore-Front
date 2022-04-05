@@ -19,7 +19,8 @@ export class NewsPageComponent implements OnInit {
     this._newsService.getNews()
     .subscribe( (res:any) => {
       console.log(res);
-      this.listNews = res.articles;      
+      this.listNews = res.articles;  
+      this.listNews = this.listNews.splice(0,10);    
     },
      err => console.log(err)
     );
@@ -28,6 +29,7 @@ export class NewsPageComponent implements OnInit {
   ngOnInit(): void {
 
     this.listarNoticias();
+    
   }
 
 }
