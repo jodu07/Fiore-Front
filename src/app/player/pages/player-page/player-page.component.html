@@ -11,29 +11,21 @@
     </div>
   </header>
 
-  <div class="container">
-    <strong>hola</strong>
 
-  </div>
   
-  <div class="container" >
-   
-  
-    <div class="div mb-4">
-      <button routerLink="/agregarJugador" type="button" class="btn btn-dark">Agregar Jugador </button>
-    </div>
-
-
-    
- 
-
-    <app-player-card [listPlayersHijo]="listPlayers"></app-player-card>
-
- 
-
-
-
-   
-      
+  <div class="container" >   
+    <h2 class="font-weight-bold mb-2">Porteros</h2>
+    <hr/>
+    <app-player-card [listPlayersHijo]="arqueros"></app-player-card> 
+    <h2 class="font-weight-bold mb-2">Defensas</h2>
+    <hr/>
+    <app-player-card [listPlayersHijo]="defensas"></app-player-card> 
+    <h2 class="font-weight-bold mb-2">Mediocampistas</h2>
+    <hr/>
+    <app-player-card [listPlayersHijo]="mediocampistas"></app-player-card> 
+    <h2 class="font-weight-bold mb-2">Delanteros</h2>
+    <hr/>
+    <app-player-card [listPlayersHijo]="delanteros"></app-player-card> 
+                  
   
   </div>

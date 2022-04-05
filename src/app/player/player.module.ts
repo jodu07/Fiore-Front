@@ -15,6 +15,7 @@ import { RegisterPlayerComponent } from './pages/register-player/register-player
 
 
 
+
 @NgModule({
   declarations: [
     PlayerPageComponent,
