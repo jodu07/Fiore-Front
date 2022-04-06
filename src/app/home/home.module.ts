@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NewsModule } from '../news/news.module';
 import { PlayerModule } from '../player/player.module';
+import { CardComponent } from './components/card/card.component';
 
 
 
 
 @NgModule({
   declarations: [
-    HomePageComponent      
+    HomePageComponent,
+    CardComponent      
   ],
   imports: [
     CommonModule,
