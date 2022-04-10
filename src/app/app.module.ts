@@ -9,11 +9,13 @@ import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './home/home.module';
 import { AdminModule } from './admin/admin.module';
 import { SigninModule } from './signIn/signin.module';
+import { PageShopComponent } from './shop/pages/page-shop/page-shop.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PageShopComponent
   ],
   imports: [
     BrowserModule,

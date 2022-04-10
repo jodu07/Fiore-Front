@@ -19,7 +19,8 @@ export class PlayerPageComponent implements OnInit {
 
 
 
-  constructor( private _playerService: PlayerService, private router: Router,
+  constructor( private _playerService: PlayerService, 
+               private router: Router,
                 private activatedRoute: ActivatedRoute) { }
 
 
