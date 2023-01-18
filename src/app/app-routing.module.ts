@@ -13,6 +13,13 @@ import { RegisterPlayerComponent } from './player/pages/register-player/register
 
 const routes: Routes = [
 
+  {
+    path: 'player',
+    loadChildren: () => import('./player/player.module').then( m => m.PlayerModule)
+  }
+
+  /*
+
   {path:'playerPage' , component: PlayerPageComponent},
   {path:'home' , component: HomePageComponent},  
   {path:'news' , component: NewsPageComponent},
@@ -24,7 +31,7 @@ const routes: Routes = [
   {path: 'prueba/:idPlayer', component: PruebasComponent},
   {path:'' , component: HomePageComponent, pathMatch:'full'}, 
   {path: '**', redirectTo: ''}
-
+*/
 ];
 
 @NgModule({
