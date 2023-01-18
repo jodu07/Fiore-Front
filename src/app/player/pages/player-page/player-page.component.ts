@@ -17,6 +17,13 @@ export class PlayerPageComponent implements OnInit {
   mediocampistas: Player[] = [];
   delanteros: Player[] = [];
 
+  namesPositions = {
+  por :'porteros',
+  def : 'defensores',
+  med : 'mediocampistas',
+  ata : 'atacantes'
+  }
+
 
 
   constructor( private _playerService: PlayerService, 

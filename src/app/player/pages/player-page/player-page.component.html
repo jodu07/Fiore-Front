@@ -14,16 +14,16 @@
 
   
   <div class="container" >   
-    <h2 class="font-weight-bold mb-2">Porteros</h2>
+    <h2 class="font-weight-bold mb-2">{{namesPositions.por | uppercase}}</h2>
     <hr/>
     <app-player-card [listPlayersHijo]="arqueros"></app-player-card> 
-    <h2 class="font-weight-bold mb-2">Defensas</h2>
+    <h2 class="font-weight-bold mb-2">{{namesPositions.def | uppercase}}</h2>
     <hr/>
     <app-player-card [listPlayersHijo]="defensas"></app-player-card> 
-    <h2 class="font-weight-bold mb-2">Mediocampistas</h2>
+    <h2 class="font-weight-bold mb-2">{{namesPositions.med | uppercase}}</h2>
     <hr/>
     <app-player-card [listPlayersHijo]="mediocampistas"></app-player-card> 
-    <h2 class="font-weight-bold mb-2">Delanteros</h2>
+    <h2 class="font-weight-bold mb-2">{{namesPositions.ata | uppercase}}</h2>
     <hr/>
     <app-player-card [listPlayersHijo]="delanteros"></app-player-card> 
                   
