@@ -4,21 +4,23 @@ import { RouterModule, Routes } from '@angular/router';
 import { PlayerPageComponent } from './pages/player-page/player-page.component';
 import { ForPlayerComponent } from './pages/for-player/for-player.component';
 import { RegisterPlayerComponent } from './pages/register-player/register-player.component';
+import { HomePlayerComponent } from './pages/home-player/home-player.component';
+
 
 const routes: Routes = [
   {
 
     path: '',
 
-    children:[
-      { path: 'plantilla', component: PlayerPageComponent },
+    component: HomePlayerComponent,
+
+    children: [
+      {path: 'plantilla', component: PlayerPageComponent },
       {path: 'forPlayer/:idPlayer', component: ForPlayerComponent},
-      {path: 'registerPlayer', component: RegisterPlayerComponent},
-      
+      {path: 'registerPlayer', component: RegisterPlayerComponent}, 
+      { path: '**', redirectTo: 'plantilla' },     
     ]
-
   }
-
 ]
 
 

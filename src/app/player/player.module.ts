@@ -10,6 +10,7 @@ import { PlayerCardComponent } from './components/player-card/player-card.compon
 import { ForPlayerComponent } from './pages/for-player/for-player.component';
 import { PruebasComponent } from './pages/pruebas/pruebas.component';
 import { RegisterPlayerComponent } from './pages/register-player/register-player.component';
+import { HomePlayerComponent } from './pages/home-player/home-player.component';
 
 
 
@@ -20,7 +21,8 @@ import { RegisterPlayerComponent } from './pages/register-player/register-player
     PlayerCardComponent,
     ForPlayerComponent,
     PruebasComponent,
-    RegisterPlayerComponent
+    RegisterPlayerComponent,
+    HomePlayerComponent
   ],
   imports: [
     CommonModule,

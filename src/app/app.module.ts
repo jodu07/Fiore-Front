@@ -13,6 +13,7 @@ import { PageShopComponent } from './shop/pages/page-shop/page-shop.component';
 import { PageFixturesComponent } from './shop/pages/page-fixtures/page-fixtures.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

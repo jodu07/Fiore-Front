@@ -16,8 +16,16 @@ const routes: Routes = [
   {
     path: 'player',
     loadChildren: () => import('./player/player.module').then( m => m.PlayerModule)
+  },
+ /* { 
+    path: 'home',
+    component: HomePageComponent
+  },
+  { 
+    path: '**',
+    redirectTo: 'home'
   }
-
+*/
   /*
 
   {path:'playerPage' , component: PlayerPageComponent},
