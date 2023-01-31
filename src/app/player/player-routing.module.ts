@@ -5,6 +5,7 @@ import { PlayerPageComponent } from './pages/player-page/player-page.component';
 import { ForPlayerComponent } from './pages/for-player/for-player.component';
 import { RegisterPlayerComponent } from './pages/register-player/register-player.component';
 import { HomePlayerComponent } from './pages/home-player/home-player.component';
+import { HistorialPageComponent } from './pages/historial-page/historial-page.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
       {path: 'plantilla', component: PlayerPageComponent },
       {path: 'forPlayer/:idPlayer', component: ForPlayerComponent},
       {path: 'registerPlayer', component: RegisterPlayerComponent}, 
+      {path: 'historialPage', component: HistorialPageComponent}, 
       { path: '**', redirectTo: 'plantilla' },     
     ]
   }

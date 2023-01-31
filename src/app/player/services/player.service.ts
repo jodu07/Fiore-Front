@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Player } from '../interfaces/player.interface';
 import { Observable } from 'rxjs';
+import { Historial } from '../interfaces/historial.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -37,6 +38,17 @@ addPlayer( player: Player): Observable<Player>{
  // console.log(player);
  const url = `${this.api}/api/`;  
  return this.http.post<Player>(url, player);
+}
+
+addHistorial( historial: Historial): Observable<Historial>{ 
+  // console.log(player);
+  const url = `${this.api}/historial/`;  
+  return this.http.post<Historial>(url, historial);
+ }
+
+getHistorial(){
+  const url = `${this.api}/historial/`;  
+  return this.http.get<Historial>(url);
 }
 
 

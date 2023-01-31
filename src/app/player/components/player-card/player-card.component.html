@@ -6,7 +6,7 @@
         <div class="card-body p-0 "><img src={{player.image}} alt="" class="img-fluid d-block mx-auto mb-1">
           <div class="card-text p-3 cardStyle">
             <h1>{{player.dorsal}} </h1>
-            <h5> <a [routerLink]="['/forPlayer', player.idPlayer]" class="text-dark text-white">Ver jugador</a>               
+            <h5> <a (click)="guardarHistorial()" [routerLink]="['/forPlayer', player.idPlayer]" class="text-dark text-white">Ver jugador</a>               
                 
             </h5>
            
@@ -17,3 +17,4 @@
   </div>
 
 </div>
+

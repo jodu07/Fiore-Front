@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { PlayerService } from '../../services/player.service';
 import { Player } from '../../interfaces/player.interface';
+import { Historial } from '../../interfaces/historial.interface';
 
 @Component({
   selector: 'app-player-page',
@@ -9,6 +10,9 @@ import { Player } from '../../interfaces/player.interface';
   styleUrls: ['./player-page.component.css']
 })
 export class PlayerPageComponent implements OnInit {
+
+  
+  
 
   listPlayers: Player[] = [];
 
@@ -46,20 +50,15 @@ export class PlayerPageComponent implements OnInit {
           this.mediocampistas.push(player);
       }else if(player.position === 'delantero'){
         this.delanteros.push(player);   
-      }    
-      
+      }      
   }
-  console.log("arqueros:",this.arqueros);
-  
+ // console.log("arqueros:",this.arqueros); 
 });
-
-
 }
-
 
   ngOnInit(): void {
-    this.listarJugadores();   
+    this.listarJugadores();
 }
-  
+
 
 }

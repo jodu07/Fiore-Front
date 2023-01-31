@@ -11,6 +11,8 @@ import { ForPlayerComponent } from './pages/for-player/for-player.component';
 import { PruebasComponent } from './pages/pruebas/pruebas.component';
 import { RegisterPlayerComponent } from './pages/register-player/register-player.component';
 import { HomePlayerComponent } from './pages/home-player/home-player.component';
+import { HistorialComponent } from './components/historial/historial.component';
+import { HistorialPageComponent } from './pages/historial-page/historial-page.component';
 
 
 
@@ -22,7 +24,9 @@ import { HomePlayerComponent } from './pages/home-player/home-player.component';
     ForPlayerComponent,
     PruebasComponent,
     RegisterPlayerComponent,
-    HomePlayerComponent
+    HomePlayerComponent,
+    HistorialComponent,
+    HistorialPageComponent
   ],
   imports: [
     CommonModule,
