@@ -1,0 +1,12 @@
+body {
+    background-image: linear-gradient(rgba(238, 228, 236, 0.5),rgba(66, 43, 65, 0.5));
+    /*background-image: url('./assets/fondoo.jpg'); */
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+}
+
+
+.login{
+    background-color: rgb(177, 151, 171);
+}

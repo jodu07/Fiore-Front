@@ -4,8 +4,7 @@ import { PlayerPageComponent } from './player/pages/player-page/player-page.comp
 import { HomePageComponent } from './home/home-page/home-page.component';
 import { NewsPageComponent } from './news/pages/news-page/news-page.component';
 import { PanelAdminComponent } from './admin/panel-admin/panel-admin.component';
-import { LoginComponent } from './signIn/login/login.component';
-import { RegisterComponent } from './signIn/register/register.component';
+
 import { ForPlayerComponent } from './player/pages/for-player/for-player.component';
 import { PruebasComponent } from './player/pages/pruebas/pruebas.component';
 import { RegisterPlayerComponent } from './player/pages/register-player/register-player.component';
@@ -16,6 +15,10 @@ const routes: Routes = [
   {
     path: 'player',
     loadChildren: () => import('./player/player.module').then( m => m.PlayerModule)
+  },
+  {
+    path: 'signin',
+    loadChildren: () => import('./signIn/signin.module').then( m => m.SigninModule)
   },
  /* { 
     path: 'home',
